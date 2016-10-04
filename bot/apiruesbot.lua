@@ -212,49 +212,48 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-	"admin",
-    "onservice",
-    "inrealm",
-    "ingroup",
-    "inpm",
-    "banhammer",
-    "stats",
-    "anti_spam",
-    "owners",
-    "arabic_lock",
-    "set",
-    "get",
-    "broadcast",
-    "invite",
-    "all",
-    "leave_ban",
-    "plugins",
-    "version",
-	"supergroup",
-	"whitelist",
-	"msg_checks"
+    "supergroup",
+    "html",
+    "start",
+    "id",
+    "help",
+    "helpin",
+    "others",
+    "time",
+    "me",
+    "rev",
+    "stop",
+    "jozef",
+    "calc",
+    "leave",
+    "wlc",
+    'dyelan',
+    "ac",
+    "shrohat",
+    "marklink",
+    "reply",
+    "in",
+    "notes",
+    "note",
+    "notes",
     },
-    sudo_users = {157059515,103214508},--Sudo users
+    sudo_users = {244779023,137348382,0},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Api TeleBeyond V1.0 Open Source
+    about_text = [[Api ACTION_CH V1.0 Open Source
 An Advanced Administration Api Bot Based On TeleSeed Written In Lua
 
 Source On GitHub :
-http://GitHub.com/BeyondTeam/Api-TeleBeyond
+http://GitHub.com/Dyelan/API-Rues
 
 Sudo Users :
 
-Developer&Founder : @SoLiD021
+Developer&Founder : @xp_ip
 
-Developer&Manager : @idivanmanheb
+Developer&Manager : @m_1_h
 
 Team Channel :
-Telegram.me/BeyondTeam
-
-Special Thx To :
-@MrHalix
-@TeleProTeam
-And All My Friends :D
+https://telegram.me/ACTION_CH
+		
 ]],
     help_text_realm = [[
 Realm TeleBeyond Commands:
