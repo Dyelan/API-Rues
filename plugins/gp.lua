@@ -4,10 +4,7 @@ local function do_keyboard_buygroup()
     keyboard.inline_keyboard = { 
 
          {
-                {text = 'MY DEV 🐭❤️', url = 'Telegram.Me/XP_IP'},
-                },
-            {
-               {text = 'Add me in GP', url = 'https://telegram.me/RuesAPI_bot?startgroup=new'},
+                {text = 'join channel 🙂', url = 'Telegram.Me/RuesAPI'},
                 },
             {
       
@@ -16,13 +13,13 @@ local function do_keyboard_buygroup()
     return keyboard 
 end 
 local function run(msg,matches) 
-local s = "*Hi the bot is update Now 🐭❤️* ".."["..msg.from.first_name.."](https://telegram.me/"..msg.from.username..")".."\n"
+local s = "* 🐣 GP Name :* "..msg.to.title.."\n\n".."🆔 *GP ID*: "..msg.to.id.."\n\n".."🏆 *My Dev*: [Rues](telegram.me/XP_IP)\n"
 local keyboard = do_keyboard_buygroup() 
  send_api_keyboard(msg, get_receiver_api(msg), s, keyboard) 
 end 
 return { 
 patterns = { 
-"^[#/!](start)$"
+"^[#/!](gp)$"
 }, 
 run = run, 
 }

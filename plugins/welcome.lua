@@ -1,17 +1,12 @@
 local function run(msg, matches)
 if matches[1] == "chat_add_user" or matches[1] == "chat_add_user_link" then
-  local text = "Welcome My Friend 😋"
+  local text = "*WELCOME IN GP ⚓️🚶🏻*"
     local keyboard = {}
     keyboard.inline_keyboard = {
     {
-                {text = '👤 Dev', url = 'Telegram.Me/XP_IP'},
+                {text = 'MY DEV 🐭❤️', url = 'Telegram.Me/XP_IP'},
                 },
-            {
-                {text = '📡 Channel', url = 'http://telegram.Me/ACION_CH'},
-      },
-      {
-      
-}      
+
 }
 
  key = JSON.encode(keyboard)

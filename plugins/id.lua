@@ -1,16 +1,16 @@
-do 
-function run(msg, matches) 
-local reply_id = msg['id'] 
+do
+function run (msg, matches)
 
+local Rues = "*  Your ID 🆔 :* ["..msg.from.id.."](https://telegram.me/"..msg.from.username..")" 
 
-return '<b> 🆔 YOUR ID IS  : </b> '..msg.from.id
-end 
+    send_api_msg(msg.to.id, get_receiver_api(msg), Rues, true, 'md')
 
-return { 
-patterns = { 
-"^/id$" 
-}, 
+end
+
+return {
+patterns = {
+"[!/#](id)"
+},
 run = run
-} 
-
+}
 end
